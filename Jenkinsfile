@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    triggers {
+        githubPush() 
+    }
+
     // Use a single environment block to define all dynamic variables.
     // In Declarative Pipeline, you can reference built-in variables directly.
     environment {
