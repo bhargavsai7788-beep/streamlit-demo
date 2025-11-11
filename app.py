@@ -30,7 +30,9 @@ def setup_database():
         (7, 'Grace', 27),
         (8, 'Heidi', 35),
         (9, 'Ivan', 23),
-        (10, 'Judy', 29)
+        (10, 'Judy', 29),
+        (11, 'Karl', 21),
+        (12, 'Liam', 20)
     ]
     cursor.executemany("INSERT INTO users (id, name, age) VALUES (?, ?, ?)", sample_data)
     
